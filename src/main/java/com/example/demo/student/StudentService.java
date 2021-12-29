@@ -20,14 +20,9 @@ public class StudentService {
 
   public List<Student> getStudents() {
     return studentRepository.findAll();
-//    return List.of(
-//        new Student(
-//            1L,
-//            "test",
-//            "test@test",
-//            LocalDate.of(2020, 01, 01),
-//            21
-//        )
-//    );
+  }
+
+  public void addNewStudent(Student student) {
+    System.out.println(student);
   }
 }
